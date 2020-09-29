@@ -16,7 +16,7 @@ create table tb_classe(
 
 create table tb_personagem(
 
-    `Id_classe` int auto_increment,
+    `Id_classe` int,
     `Nome` varchar (255),
     `Habilidades` varchar (255),
     `Sexo` enum ('M','F'),
@@ -56,4 +56,4 @@ Constraint fk_tb_classe foreign key (`Id_classe`) references tb_classe (`Id_clas
 
 		select * from tb_personagem WHERE nome like 'M%';
     
-    DROP DATABASE db_generation_game_online;
+    #DROP DATABASE db_generation_game_online;
